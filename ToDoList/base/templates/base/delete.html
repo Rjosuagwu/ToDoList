@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Are you sure you want to delete the following:</h1>
+        <br>
+        <br>
+        <h3>{{task.title}}</h3>
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit">Delete</button>
+            <a href ="{% url 'tasks' %}">Cancel</a>
+        </form>
+    </body>
+
+</html>
