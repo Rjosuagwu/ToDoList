@@ -1,0 +1,2 @@
+djangokey=SECRET_KEY
+adminurl=SECRET_ADMIN_URL
