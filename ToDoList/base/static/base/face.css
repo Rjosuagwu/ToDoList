@@ -1,0 +1,123 @@
+
+body{
+    background-color: bisque;
+    max-width: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+}
+
+/* FOR THE TABLE*/
+
+tr a{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.separate{
+    width: 50%;
+    margin: auto;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 50px;
+    font-size: 150%;
+    text-align: center;
+
+    border: 5px solid black;
+    border-radius: 20px 20px 20px 20px;
+    background: linear-gradient(45deg, bisque 0%, rgb(255, 255, 255) 35%, bisque 100%);;
+
+    margin-top: 100px;
+}
+  
+#item{
+    display:block;
+    align-items: center;
+}
+
+#task-item{
+    width: 150px;
+}
+
+#item:hover{
+    border: 3px solid black;
+    background-color: bisque;
+}
+
+h1#Title{
+    font-size: 300%;
+}
+
+td#task-detail{
+    font-size: 90%;
+}
+
+/*FOR THE LINKS*/
+
+a{
+    color: blueviolet;
+}
+a:visited{
+    text-decoration: none;
+}
+
+/*FOR THE HEADER BAR*/
+
+
+form{
+    text-align: right;
+}
+
+.header-bar {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    color: azure;
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 5px 5px 5px 5px;
+    background: linear-gradient(90deg, bisque 0%, #EB796F 44%, bisque 100%);;
+
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#username{
+    color: black;
+    font-weight: bold;
+}
+
+
+/*Below will be the customization of the search bar*/
+#search {
+    margin-left: 105px; /* Push the search form to the right side of the header */
+}
+
+input[type="text"], input[type="submit"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+input[type="text"]:hover, input[type="submit"]:hover{
+    border: 3px solid black;
+    background-color: bisque;
+  }
+
+#logout{
+    font-weight: bold;
+}
+
+a#logout:hover{
+    font-weight: bolder;
+}
+
+#create{
+    display:block;
+}
+
+#create:hover{
+    border: 3px solid black;
+    background-color: bisque;
+}

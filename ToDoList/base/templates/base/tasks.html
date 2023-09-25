@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'base/face.css' %}" rel="stylesheet">  
+        <meta charset="utf-8">     
+        <title>ToDoList</title>
+    </head>
+    <body>
+        
+        <div class="header-bar">
+        {% if request.user.is_authenticated %}
+        <p id = username>{{request.user}}</p> <!--This will display the username of the user if they are logged in-->
+        <a id = "logout" href="{% url 'logout' %}">Logout</a>
+        {% else %}
+
+        <a id="logout" href="{% url 'login' %}">Login</a>
+        <a id="logout" href="{% url 'register' %}">Register</a>
+
+        {% endif %}
+
+        <form id="search" method="GET">
+            <input type="text" name="search-area" value="{{search_input}}">
+            <input type="submit" value="Search"> <!--This value defines the text on the Search Button-->
+        </form>
+
+        <hr>
+        </div>
+
+        {% if messages %}
+            {% for message in messages %}
+
+                {{message}}
+
+            {% endfor %}
+        {% endif %}
+
+            <div class="separate">
+                <h1 id="Title">To Do List</h1>
+
+            <a id="create"  href="{% url 'create' %}"><h2>Create Task</h2></a>
+
+            <table>
+                {% if task %}
+                <tr>
+                    <th colspan="3"><h2>Tasks</h2></th>
+                </tr>
+                {% for item in task %}
+                <tr id="item">
+                    <td id="task-item"><h3>{{item.title|title}}</h3></td>
+                    <td id="task-detail" id="task-item"><a href="{% url 'update' item.id %}">Update</a></td>
+                    <td id="task-detail" id="task-item"><a href ="{% url 'delete' item.id %}">Delete</a></td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <h3>No Items To Display</h3>
+                {% endif %}
+            </table>
+
+            </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'base/main.css' %}" rel="stylesheet"> 
+        <link href="{% static 'base/delete.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header-bar">
+        <h1>Are you sure you want to delete the following:</h1>
+        </div>
+        <br>
+        <br>
+        <h1>{{task.title}}</h3>
+            <br>
+            <br>
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit">Delete</button>
+            <a href ="{% url 'tasks' %}">Cancel</a>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'base/main.css' %}" rel="stylesheet"> 
+        <link href="{% static 'base/login.css' %}" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <div class="header-bar">
+        <h1>Login</h1>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="lost">
+        <h4>Dont have an account?</h4><a href ="{% url 'register' %}">Register</a>
+        </div>
+    </body>
+</html>
