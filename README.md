@@ -29,6 +29,9 @@ User Authentication
 Django Forms
 Django Messages Framework
 
+## Usage
+
+![image](usage2.png)
 
 ## License
 Specify the license under which your project is distributed. For example:
