@@ -6,8 +6,10 @@ Brief description of your project.
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Usage](#usage)
 - [License](#license)
 - [Contact](#contact)
+
 
 ## Introduction
 The Django To-Do List project is a versatile web application designed to help users efficiently manage their tasks. By seamlessly combining user authentication, task creation, updating, and deletion, along with a user-friendly search feature, this application simplifies the process of organizing and prioritizing daily activities. This project addresses the common challenge of keeping track of tasks and ensures a user-friendly experience. Whether you want to create a to-do list, update existing tasks, or search for specific items, this application offers a practical solution. It showcases the power of Django for web development, emphasizing user convenience and efficient task management.
