@@ -1,6 +1,6 @@
 # To-Do-List
 
-Brief description of your project.
+A Web Application that uses the Django framework to build a backend and frontend to keep track of any tasks at hand
 
 ## Table of Contents
 - [Introduction](#introduction)
