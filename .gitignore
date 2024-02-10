@@ -1,0 +1,9 @@
+# .gitignore
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore the collected_static folder
+collected_static/
+4. Commit and Push 
