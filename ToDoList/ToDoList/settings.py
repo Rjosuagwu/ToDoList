@@ -26,7 +26,7 @@ SECRET_KEY = djangokey
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['rjosuagwu.github.io','rjosuagwu.github.io/ToDoList']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
