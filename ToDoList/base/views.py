@@ -97,7 +97,7 @@ def TaskReg(request):
     else:
         form = UserCreationForm()
 
-    return render(request, 'base/reg.html', {'form':form})
+    return render(request, 'base/index.html', {'form':form})
 
 
 def TaskLogin(request):
