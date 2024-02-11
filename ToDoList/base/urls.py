@@ -9,5 +9,5 @@ urlpatterns = [
     path('delete/<int:pk>',views.TaskDelete,name='delete'),
     path('login/', views.TaskLogin, name='login'),
     path('logout/', views.TaskLogout, name = 'logout'),
-    path('reg/', views.TaskReg, name='register')
+    path('index/', views.TaskReg, name='register')
 ]
